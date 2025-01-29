@@ -1,0 +1,188 @@
+<div class="form-plakatif">
+    <div class="content__inner">
+        <div class="container overflow-hidden">
+
+            <div class="multisteps-form">
+
+                <div class="row">
+                    <div class="col-12 col-lg-8 m-auto">
+
+                        <form class="form-horizontal" action="%admin_url%" method="post" id="myform" novalidate>
+                            %nonce_field%
+                            <input type="hidden" name="action" value="custom_action">
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Deine Vorteile aus unserem Erstgespräch:</h3>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4 intro">
+                                        <div class="col-12">
+                                            <ul class="checkmark">
+                                                <li>Klarheit über deine Anforderungen</li>
+                                                <li>Praxisorientierte Beratung</li>
+                                                <li>Unverbindliches und faires Angebot</li>
+                                            </ul>
+                                            <p>Für deine Anfrage brauchst du nur 2 Minuten. Also: Lass uns loslegen !</p>
+                                        </div>
+                                    </div>
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Um welche Art von Projekt handelt es sich ?</h3>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4 projecttype">
+                                        <div class="col-12">
+                                            <input type="radio" name="projecttype" id="projecttype-1" value="Entwicklung eines Wordpress-Plugins" class="input-hidden" />
+                                            <label for="projecttype-1">
+                                                <div class="radio-textlabel noimg">Entwicklung eines Wordpress-Plugins</div>
+                                            </label>
+                                        
+                                            <input type="radio" name="projecttype" id="projecttype-2" value="Entwicklung einer Typo3-Extension" class="input-hidden" />
+                                            <label for="projecttype-2">
+                                                <div class="radio-textlabel noimg">Entwicklung einer Typo3-Extension</div>
+                                            </label>
+
+                                            <input type="radio" name="projecttype" id="projecttype-3" value="Optimierung einer bestehenden Wordpress-/Typo3-Website" class="input-hidden" />
+                                            <label for="projecttype-3">
+                                                <div class="radio-textlabel noimg">Optimierung einer bestehenden Wordpress-/Typo3-Website</div>
+                                            </label>
+
+                                            <input type="radio" name="projecttype" id="projecttype-4" value="Entwicklung einer neuen Website" class="input-hidden" />
+                                            <label for="projecttype-4">
+                                                <div class="radio-textlabel noimg">Entwicklung einer neuen Website</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Was genau möchtest du erreichen ? Beschreibe es bitte kurz in 2-3 Sätzen.</h3>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4">
+                                        <div class="col-12">
+                                            <textarea rows="3" name="goal" id="goal" class="multisteps-form__input form-control" placeholder="Was ist dein Ziel ?" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Wie viel Gesamtbudget ist für die Realisierung deines Projekts geplant ?</h3>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4 budget">
+                                        <div class="col-12">
+                                            <input type="radio" name="budget" id="budget-1" value="bis zu 3.000 €" class="input-hidden" />
+                                            <label for="budget-1">
+                                                <div class="radio-textlabel noimg">bis zu 3.000 €</div>
+                                            </label>
+                                        
+                                            <input type="radio" name="budget" id="budget-2" value="3.000 - 9.000 €" class="input-hidden" />
+                                            <label for="budget-2">
+                                                <div class="radio-textlabel noimg">3.000 - 9.0000 €</div>
+                                            </label>
+
+                                            <input type="radio" name="budget" id="budget-3" value="über 9.000 €" class="input-hidden" />
+                                            <label for="budget-3">
+                                                <div class="radio-textlabel noimg">über 9.000 €</div>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Wie lautet dein Name ?</h3>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4">
+                                        <div class="col-12">
+                                            <input class="multisteps-form__input form-control" type="text" name="username" id="username" placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Fast fertig ! An welche E-Mail-Adresse dürfen wir dir die Terminbestätigung schicken ?</h3>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4">
+                                        <div class="col-12">
+                                            <input type="email" id="email" name="email" class="multisteps-form__input form-control" placeholder="E-Mail" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3 class="multisteps-form__title">Danke <span class="the_username"></span> ! <br />Und hier ist auch schon der letzte Schritt: Wie lautet deine Telefonnummer ?</h3>
+                                <h4>Bitte gib die Telefonnummer ein, unter der du tagsüber erreichbar bist, um unser Gespräch zu vereinbaren.</h4>
+                                <div class="multisteps-form__content">
+
+                                    <div class="form-row mt-4">
+                                        <div class="col-12">
+                                            <input type="text" id="phone" name="phone" class="multisteps-form__input form-control" placeholder="Telefonnummer" required>
+                                        </div>
+                                    </div>
+
+                                    <p class="small" style="color:#999;">Mit dem Absenden akzeptierst Du unsere <a href="/datenschutz" target="_blank">Datenschutzerklärung</a> und erlaubst uns, Dich zu kontaktieren.</p>
+
+                                    <div class="button-row d-flex mt-4"></div>
+                                </div>
+                            </div>
+                                
+
+                            <div class="multisteps-form__panel shadow p-4 rounded bg-lightgrey">
+                                <h3>Vielen Dank !</h3> 
+                                
+                                <p>Deine Antworten haben wir erhalten. Hier sind Deine nächsten Schritte:</p>
+
+                                <div class="greenbox">
+
+                                    <p>Bitte sorge dafür, daß du in den nächsten <strong>48h Stunden zwischen 9.00 - 17.00 Uhr telefonisch erreichbar</strong> bist, damit wir einen passenden Termin finden können.</p>
+
+                                </div>
+
+                                <p>&nbsp;</p>
+                                <p><strong>WICHTIG</strong></p>
+                                <ul>
+                                    <li>Wir werden maximal dreimal versuchen, dich telefonisch zu erreichen, um unseren Termin zu vereinbaren. Danach nicht mehr !</li>
+                                    <li>Von dieser Nummer ausgehend werden wir dich anrufen: <strong>49 177 731 80 21</strong></li>
+                                </ul>
+
+                                <p>Wir freuen uns auf das Gespräch mit dir, in der wir uns deine Situation genau anschauen, und eine individuelle Strategie für dich erarbeiten.</p>
+
+                                <p>Liebe Grüsse und bis ganz bald !</p>
+
+                                <p>Jürgen</p>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:90px;">
+                    <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+                        <div class="multisteps-form__progress">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
