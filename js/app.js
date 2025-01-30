@@ -40,14 +40,14 @@
             buttonrow = $(this).find('div.button-row');
             if( idx !== 1 ) {
                 // 
-                $prevbutton = '<button class="btn btn-primary js-btn-prev prev" type="button" title="Zurück">Zurück</button>';
+                $prevbutton = '<button class="btn btn-primary js-btn-prev prev" type="button" title="Back">Back</button>';
                 buttonrow.prepend($prevbutton);
             }
             if( idx !== numPanels-1 ) {
                 // 
-                const label = idx == 1 ? "Klingt gut, los geht's !" : "Weiter";
+                const label = idx == 1 ? "Sounds good Let's go !" : "Next";
 
-                $nextbutton = '<button class="btn btn-primary ml-auto js-btn-next next" type="button" title="Weiter">'+label+'</button>';
+                $nextbutton = '<button class="btn btn-primary ml-auto js-btn-next next" type="button" title="Next">'+label+'</button>';
                 buttonrow.append($nextbutton);
             }
 
@@ -56,7 +56,7 @@
             //
             if( idx == numPanels-1 ) {
                 // 
-                $submitbutton = '<input class="btn btn-primary ml-auto" type="submit" value="Strategiession anfragen">';
+                $submitbutton = '<input class="btn btn-primary ml-auto" type="submit" value="Send request">';
                 buttonrow.append($submitbutton);
             }
 
@@ -69,10 +69,6 @@
         });
 
         $('button.step1').addClass('js-active');
-
-
-
-
 
         // find radio buttons and bind next panel action on click
         //
@@ -94,10 +90,7 @@
 
                 });
             }
-
         });
-
-
 
 
 
@@ -177,9 +170,7 @@
                     //a is form object and e is event
                     e.preventDefault(); // avoid submitting the form here
 
-                    //$('button.step4').addClass('js-active');
-
-                    // sanitize ebit fields
+                    // custom sanitization
                     //
                     /*
                     var ebit1 = $('#ebit1').val();
@@ -195,28 +186,28 @@
                 messages: {
 
                     username: {
-                        required: "Bitte gib deinen Namen ein."
+                        required: "Enter your name"
                     },
                     goal: {
-                        required: "Bitte beschreibe dein Ziel.",
+                        required: "Describe your goal",
                     },
                     email: {
-                        required: "Bitte gib deine Email Adresse ein.",
+                        required: "Enter your email address",
                     },
                     datenschutz: {
-                        required: "Dies ist ein Pflichtfeld.",
+                        required: "This field is required",
                     },
                     projecttype: {
-                        required: "Bitte triff eine Auswahl.",
+                        required: "Please make a choice",
                     },
                     budget: {
-                        required: "Bitte triff eine Auswahl.",
+                        required: "Please make a choice",
                     },
                     obstacle: {
-                        required: "Bitte beschreibe dein größtes Hindernis.",
+                        required: "What is you biggest obstacle ?",
                     },
                     phone: {
-                        required: "Bitte gib deine Telefonnummer ein.",
+                        required: "Enter your phone number",
                     }
                 }
             });
@@ -268,7 +259,7 @@
 
 
         jQuery.extend(jQuery.validator.messages, {
-            range: "Bitte geben Sie einen Wert zwischen 50.000 und 10.000.000 ein."
+            range: "Range must lie between 50.000 and 10.000.000."
         });
 
 
@@ -308,31 +299,24 @@
             type: method,
             data: data
                 }).done(function (data) {
-
-                    //alert('ajax req done');
                     
                     // Hide last panel + show thank you message
                     //
                     $('#thanks_panel').prev().hide();
                     $('#thanks_panel').css('display', 'flex');
 
-                    console.log(data);
-                    // {"error":false"}
-                    // {"error":true,"error_message":"Email is required"}
+                    //console.log(data);
 
 
                 }).fail(function (e) {
                     
-                    console.log(data);
-                    console.log('ajax req fail');
-                    console.log(e);
+                    //console.log(data);
+                    //console.log('ajax req fail');
+                    //console.log(e);
                     
                 }).always(function () {
             
             });
-
-
-        
     }
 
 
@@ -364,10 +348,6 @@ jQuery(window).keydown(function(event){
 
     // When ready.
     $(function() {
-
-
-
-
 
         //min="50000" max="10000000"
         
@@ -402,26 +382,7 @@ jQuery(window).keydown(function(event){
             
         } );
         
-        /**
-         * ==================================
-         * When Form Submitted
-         * ==================================
-         */
-        /*
-        $form.on( "submit", function( event ) {
-            
-            var $this = $( this );
-            var arr = $this.serializeArray();
-        
-            for (var i = 0; i < arr.length; i++) {
-                    arr[i].value = arr[i].value.replace(/[($)\s\._\-]+/g, ''); // Sanitize the values.
-            };
-            
-            console.log( arr );
-            
-            event.preventDefault();
-        });
-        */
+
         
     });
 })(jQuery);

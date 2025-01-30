@@ -1,0 +1,316 @@
+div.form-plakatif {
+  max-width: 1120px;
+  margin-top: 30px !important;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+div.form-plakatif h3 {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight:400;
+  letter-spacing: 0;
+  color:#083054;
+}
+
+div.form-plakatif h4 {
+  font-size: 1em;
+  letter-spacing: 0;
+  color: #ccc;
+}
+
+div.form-plakatif ul li {
+  margin-bottom: 20px;
+}
+
+div.form-plakatif input[type="text"],
+div.form-plakatif input[type="password"],
+div.form-plakatif input[type="email"],
+div.form-plakatif input[type="url"],
+div.form-plakatif input[type="date"],
+div.form-plakatif input[type="month"],
+div.form-plakatif input[type="time"],
+div.form-plakatif input[type="datetime"],
+div.form-plakatif input[type="datetime-local"],
+div.form-plakatif input[type="week"],
+div.form-plakatif input[type="number"],
+div.form-plakatif input[type="search"],
+div.form-plakatif input[type="tel"],
+div.form-plakatif input[type="color"],
+div.form-plakatif textarea {
+  border-radius:4px;
+  border:1px solid #ccc;
+  font-size: 1.3em;
+  letter-spacing: -0.015em;
+  padding: 1em 0.6em;
+  font-weight: normal;
+}
+
+div.form-plakatif input[type=radio]:checked + label>img {
+  border: 5px solid #083054;
+  border-radius: .25rem;
+}
+
+div.form-plakatif input[type=radio] + label>img {
+  border: 5px solid #fff;
+  border-radius: .25rem;
+  width: auto;
+  height: 180px;
+}
+
+div.form-plakatif input[type=radio]:checked + label .radio-textlabel.noimg {
+  border-color: #fff;
+  color:#fff;
+  background-color: #083054;
+}
+
+div.form-plakatif button:focus,
+div.form-plakatif button:hover,
+div.form-plakatif .button:focus,
+div.form-plakatif .button:hover,
+div.form-plakatif input[type="button"]:focus,
+div.form-plakatif input[type="button"]:hover,
+div.form-plakatif input[type="reset"]:focus,
+div.form-plakatif input[type="reset"]:hover,
+div.form-plakatif input[type="submit"]:focus,
+div.form-plakatif input[type="submit"]:hover {
+  text-decoration: none;
+}
+
+div.form-plakatif button.btn-primary {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-size: 200% auto;
+  border:none;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 0.3em;
+}
+
+div.form-plakatif button.btn-primary:hover {
+  color: #fff;
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+  border: none;
+}
+
+
+
+div.form-plakatif .multisteps-form__progress input[type="button"], 
+div.form-plakatif .multisteps-form__progress input[type="reset"], 
+div.form-plakatif .multisteps-form__progress a.button, 
+div.form-plakatif .multisteps-form__progress a.button:visited {
+  color: #ffffff;
+  background-color: #083054;
+  font-weight: normal;
+  font-size: 1em;
+  padding: 0.6em 1em;
+  text-transform: none;
+}
+
+
+
+div.form-plakatif input[type="submit"] {
+  color: #ffffff;
+  background-color: #fd001e;
+  border-color: #fd001e;
+  font-weight: normal;
+  font-size: 1em;
+  padding: 0.6em 1em;
+  text-transform: none;
+}
+
+div.form-plakatif input[type="submit"]:hover {
+  color: #fd001e;
+  background-color: #fff;
+  border-color: #fd001e;
+  text-decoration: none;
+  border: 1px solid #fd001e;
+}
+
+
+div.form-plakatif textarea.form-control {
+  height: auto;
+  font-size: 1.3em;
+}
+
+div.form-plakatif .multisteps-form__panel + .multisteps-form__panel{
+  display:none;
+  opacity:0;
+
+}
+
+div.form-plakatif .multisteps-form__progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+ 
+div.form-plakatif .multisteps-form__progress-btn {
+  position: relative;
+  padding-top: 20px;
+  color: #ccc;
+  text-indent: -9999px;
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+}
+div.form-plakatif .multisteps-form__progress-btn:hover {
+  color: #ccc;
+  cursor: default;
+}
+div.form-plakatif .multisteps-form__progress-btn:focus {
+  color: #ccc;
+  cursor: default;
+}
+@media (min-width: 500px) {
+  div.form-plakatif .multisteps-form__progress-btn {
+    text-indent: 0;
+  }
+}
+
+div.form-plakatif .multisteps-form__progress-btn:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 13px;
+  height: 13px;
+  content: '';
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  transition: all 0.15s linear 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s, -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #eee;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+div.form-plakatif .multisteps-form__progress-btn:after {
+  position: absolute;
+  top: 5px;
+  left: calc(-50% - 13px / 2);
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #eee;
+  z-index: 1;
+}
+
+div.form-plakatif .multisteps-form__progress-btn:first-child:after {
+  display: none;
+}
+
+div.form-plakatif .multisteps-form__progress-btn.js-active {
+  color: #eee;
+}
+
+div.form-plakatif .multisteps-form__progress-btn.js-active:before {
+  -webkit-transform: translateX(-50%) scale(1.2);
+          transform: translateX(-50%) scale(1.2);
+  background-color: #ccc;
+}
+
+div.form-plakatif .custom-control-label::after {
+  background-size: 65% 65%;
+}
+
+div.form-plakatif ::placeholder { /* Most modern browsers support this now. */
+ color: #ccc !important;
+}
+
+div.form-plakatif .rounded {
+  border-radius: 0.6em !important;
+}
+
+div.form-plakatif .input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+div.form-plakatif div.multisteps-form label {
+  display: block;
+  background: #ddd;
+}
+
+
+div.form-plakatif .radio-textlabel {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 20px !important;
+  border: none !important;
+  font-weight: 400 !important;
+}
+
+div.form-plakatif input[type=radio]:checked + label .radio-textlabel {
+  font-weight: bold;
+  color: #083054;
+}
+
+div.form-plakatif input[type=radio] + label .radio-textlabel.noimg {
+  padding:20px;
+  border: 2px solid #7a7a7a;
+  border-radius: .25rem;
+  
+}
+
+div.form-plakatif div.multisteps-form label:hover {
+  background: #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+div.form-plakatif #thanks_panel {
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.form-plakatif #thanks_panel h3{
+  color:#083054;
+  text-align:left;
+}
+
+div.form-plakatif #thanks_panel ul{
+  border: 2px solid #083054;
+  border-radius : 2px;
+  padding:2em;
+
+}
+
+div.form-plakatif .greenbox {
+  background-color:#083054;
+  color:#fff;
+  padding:10px;
+}
+
+div.form-plakatif a, 
+div.form-plakatif a:visited, 
+div.form-plakatif a:hover { 
+  color: #083054; 
+}
+
+div.form-plakatif a.download {
+  background:#fff;
+  font-size: 1em;
+  font-weight:bold;
+  padding: 0.6em 1em;
+  border-radius: .25rem;
+
+}
+
+div.form-plakatif .bg-lightgrey {
+  background-color: #eee !important;
+}
+
+div.form-plakatif .form-control:focus {
+  border-color: #ff5a00 !important;
+  box-shadow: 0 0 0 0.1rem #ff5a00 !important;
+}
