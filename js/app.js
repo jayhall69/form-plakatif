@@ -7,7 +7,7 @@
         $.validator.addMethod("alphanumeric", function(value, element) {
             console.log('method("alphanumeric"');
             return this.optional(element) || /^[ ,()+\.-a-zA-Z0-9äüöÄÜÖß]*$/i.test(value);
-        }, "Bitte nur Buchstaben und Leerzeichen verwenden.");
+        }, "Only letters or space allowed.");
 
 
         $.validator.methods.range = function( value, element, param ) {
@@ -337,7 +337,7 @@ jQuery(window).keydown(function(event){
     //                                                                                                                  */
     //                                                                                                                  */
     //                                                                                                                  */
-    //                                      numeric form fields                                                         */
+    //                                      formatting numeric form fields                                              */
     //                                                                                                                  */
     //                                                                                                                  */
     //                                                                                                                  */

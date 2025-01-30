@@ -43,6 +43,7 @@ function formplakatif($atts) {
     $template = file_get_contents(plugin_dir_path(__FILE__) . 'templates/form.html');
 
     // replace variables
+	$template = str_replace('%plugin_path%', plugin_dir_path(__FILE__), $template);
     $template = str_replace('%nonce_field%', $nonce_field, $template);
     $template = str_replace('%admin_url%', admin_url('admin-ajax.php'), $template);
 
